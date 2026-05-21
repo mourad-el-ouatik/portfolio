@@ -15,7 +15,7 @@ const certifications = [
   },
   {
     name: "FCA - FortiGate 7.6 Operator",
-    issuer: "MLIAEdu",
+    issuer: "Fortinet",
     date: "December 2025",
     status: "verified",
     icon: Network,
