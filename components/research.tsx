@@ -29,9 +29,10 @@ const publications = [
 const conferences = [
   {
     name: "AISEC 2026",
-    role: "Website Developer",
+    role: "Speaker",
     organization: "UCA - Cadi Ayyad University",
-    description: "Developed the official conference website for the international AI & Security conference.",
+    description: "Participated in a conference as a speaker on SOC platforms and their architecture",
+    image: "/aisec.jpg",
   },
 ]
 
@@ -113,22 +114,48 @@ export function Research() {
               </div>
 
               <div className="space-y-4">
-                {conferences.map((conf, index) => (
-                  <motion.div
-                    key={conf.name}
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={isInView ? { opacity: 1, y: 0 } : {}}
-                    transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                    className="p-5 bg-background border border-border rounded-xl hover:border-primary/50 transition-colors"
-                  >
+              {conferences.map((conf, index) => (
+                <motion.div
+                  key={conf.name}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={isInView ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
+                  className="group bg-background border border-border rounded-xl overflow-hidden hover:border-primary/50 transition-all duration-300"
+                >
+                  {/* Banner Image */}
+                  <div className="relative h-56 overflow-hidden">
+                    <img
+                      src={conf.image}
+                      alt={conf.name}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
+              
+                    {/* Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
+                  </div>
+              
+                  {/* Content */}
+                  <div className="p-5">
                     <div className="flex items-center justify-between mb-2">
-                      <span className="text-xs font-mono text-muted-foreground">{conf.organization}</span>
-                      <span className="px-2 py-0.5 text-xs bg-primary/10 text-primary rounded-full">{conf.role}</span>
+                      <span className="text-xs font-mono text-muted-foreground">
+                        {conf.organization}
+                      </span>
+              
+                      <span className="px-2 py-0.5 text-xs bg-primary/10 text-primary rounded-full">
+                        {conf.role}
+                      </span>
                     </div>
-                    <h4 className="font-semibold text-foreground mb-2">{conf.name}</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{conf.description}</p>
-                  </motion.div>
-                ))}
+              
+                    <h4 className="font-semibold text-foreground mb-2">
+                      {conf.name}
+                    </h4>
+              
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {conf.description}
+                    </p>
+                  </div>
+                </motion.div>
+              ))}
               </div>
             </div>
 
