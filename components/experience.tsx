@@ -28,20 +28,6 @@ const education = [
 
 const experience = [
   {
-    title: "Founder & CEO",
-    organization: "Folyo",
-    period: "January 2026 - Present",
-    description: [
-      "Designed and developed a secure order management platform from the ground up, applying security-by-design principles",
-      "Implemented CI/CD pipelines with automated security testing (SAST/DAST) at every stage",
-      "Containerized infrastructure using Docker with least-privilege configurations",
-      "Enforced RBAC and set up real-time monitoring for security events",
-    ],
-    tech: ["Docker", "CI/CD", "SAST/DAST", "RBAC", "DevSecOps"],
-    icon: GitBranch,
-    type: "work",
-  },
-  {
     title: "Security Architect (Internship)",
     organization: "ABsec Cybersecurity",
     period: "February 2026 - Present",
@@ -53,6 +39,20 @@ const experience = [
     ],
     tech: ["Wazuh", "RTIR", "Cortex", "MISP", "OpenCTI", "SOAR"],
     icon: Shield,
+    type: "work",
+  },
+  {
+    title: "Founder & CEO",
+    organization: "Folyo",
+    period: "January 2026 - Present",
+    description: [
+      "Designed and developed a secure order management platform from the ground up, applying security-by-design principles",
+      "Implemented CI/CD pipelines with automated security testing (SAST/DAST) at every stage",
+      "Containerized infrastructure using Docker with least-privilege configurations",
+      "Enforced RBAC and set up real-time monitoring for security events",
+    ],
+    tech: ["Docker", "CI/CD", "SAST/DAST", "RBAC", "DevSecOps"],
+    icon: GitBranch,
     type: "work",
   },
   {
