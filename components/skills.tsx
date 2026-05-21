@@ -60,6 +60,12 @@ const skills = [
     tools: ["HTML", "CSS", "Tailwind", "JavaScript", "PHP", "React"],
     level: 100,
   },
+  {
+    category: "Mobile Development",
+    icon: Globe,
+    tools: ["XML", "Gradle", "Java", "PHP", "SQL", "AndroidManifest"],
+    level: 100,
+  },
 ]
 
 export function Skills() {
