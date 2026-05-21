@@ -84,10 +84,9 @@ export function About() {
               <h3 className="text-foreground font-semibold mb-4">Research Interests</h3>
               <div className="flex flex-wrap gap-2">
                 {[
-                  "Post-Quantum Cryptography",
-                  "AI in Cybersecurity",
-                  "Threat Intelligence",
-                  "Cloud Security",
+                  "Post-Quantum & Cybersecurity",
+                  "AI & Cybersecurity",
+                  "AI Based Threat Intelligence",
                   "Zero-Trust Architecture",
                 ].map((interest) => (
                   <span
