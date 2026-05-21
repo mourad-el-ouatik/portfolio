@@ -8,24 +8,22 @@ import { FileText, BookOpen, Calendar, ArrowRight } from "lucide-react"
 const publications = [
   {
     type: "Research Interest",
-    title: "AI-Powered Threat Detection in IT Environments",
-    description: "Exploring machine learning approaches for anomaly detection and automated threat response in IT architectures.",
-    status: "Planned",
+    title: "AI-Assisted Mobile Application Security Analysis",
+    description: "Researching intelligent Android application security analysis techniques combining static reverse engineering, behavioral inspection, and AI-assisted malware detection to identify vulnerabilities, malicious patterns, and mobile threats in APK environments.",
+    status: "Done",
   },
   {
     type: "Research Interest",
     title: "AI-Driven SOC Automation & Intelligent Threat Analysis",
-    description:
-      "Exploring the integration of AI models such as Ollama within SOC environments to enhance alert analysis, automate threat classification, and orchestrate intelligent incident response workflows in multi-tenant security architectures.",
+    description: "Exploring the integration of AI models such as Ollama within SOC environments to enhance alert analysis, automate threat classification, and orchestrate intelligent incident response workflows in multi-tenant security architectures.",
     status: "In Progress",
   },
   {
-  type: "Research Interest",
-  title: "AI-Assisted Mobile Application Security Analysis",
-  description:
-    "Researching intelligent Android application security analysis techniques combining static reverse engineering, behavioral inspection, and AI-assisted malware detection to identify vulnerabilities, malicious patterns, and mobile threats in APK environments.",
-  status: "Done",
-},
+    type: "Research Interest",
+    title: "AI-Powered Threat Detection in IT Environments",
+    description: "Exploring machine learning approaches for anomaly detection and automated threat response in IT architectures.",
+    status: "Planned",
+  },
 ]
 
 const conferences = [
