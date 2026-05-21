@@ -12,7 +12,7 @@ const stats = [
 ]
 
 const techStack = [
-  "Docker", "Terraform", "Kubernetes", "Python", "Linux", "Wazuh"
+  "Docker", "Terraform", "Kubernetes", "Python", "Linux", "Wazuh", "Ollama"
 ]
 
 export function Hero() {
