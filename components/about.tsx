@@ -9,7 +9,7 @@ const highlights = [
   { icon: Shield, label: "Security Architect" },
   { icon: Cloud, label: "Cloud Security" },
   { icon: GitBranch, label: "CI/CD Security" },
-  { icon: LineChart, label: "Threat Analytics" },
+  { icon: LineChart, label: "AI Based Threat Analytics" },
 ]
 
 export function About() {
