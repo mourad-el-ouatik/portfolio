@@ -97,7 +97,7 @@ const projects = [
     highlight: "Real-time AI-driven phishing detection and email threat scoring",
     icon: Mail,
     github: "https://github.com/mourad-el-ouatik/-Smart-Phishing-Detector-for-Gmail",
-  }
+  },
       
   {
     title: "Enterprise IDS Architecture",
