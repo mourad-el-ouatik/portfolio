@@ -5,9 +5,9 @@ import { Github, Linkedin, Mail, Award, ArrowDown, Download, MapPin } from "luci
 import Image from "next/image"
 
 const stats = [
-  { value: "15+", label: "Security Projects" },
-  { value: "8", label: "Certifications" },
-  { value: "5K+", label: "Events/Day Analyzed" },
+  { value: "38+", label: "Security Projects" },
+  { value: "3", label: "Certifications" },
+  { value: "2", label: "Scientific Articles" },
   { value: "4", label: "Leadership Roles" },
 ]
 
