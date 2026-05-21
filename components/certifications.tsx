@@ -7,25 +7,25 @@ import { Award, Server, Cloud, Network, ExternalLink, Clock, CheckCircle } from 
 
 const certifications = [
   {
-    name: "Public Cloud Security 7.6.4 Architect",
-    issuer: "Fortinet",
-    date: "March 2026",
+    name: "Mobile Programming",
+    issuer: "MLIAEdu",
+    date: "Mai 2026",
     status: "verified",
-    icon: Cloud,
+    icon: Smartphone,
   },
   {
     name: "FCA - FortiGate 7.6 Operator",
-    issuer: "Fortinet",
-    date: "December 2025",
+    issuer: "MLIAEdu",
+    date: "June 2026",
     status: "verified",
     icon: Network,
   },
   {
-    name: "OCI Foundations Associate",
+    name: "Mobile app security",
     issuer: "Oracle",
     date: "Coming Soon",
     status: "pending",
-    icon: Server,
+    icon: ShieldCheck,
   },
 ]
 
