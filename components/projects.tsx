@@ -26,16 +26,16 @@ const projects = [
     icon: Smartphone,
     github: "https://github.com/mourad-el-ouatik/secure-apk-analyzer",
   },
-{
-  title: "AI-Driven Multi-Tenant SOC Architecture",
-  period: "March 2026 – April 2026",
-  description: "Designed and implemented an AI-enhanced multi-tenant SOC architecture integrating Wazuh SIEM for real-time threat detection, Ollama-based AI analysis for intelligent alert investigation, and automated SOAR-driven incident response workflows. Security events detected by Wazuh were securely transmitted through SSH tunnels over VPN infrastructure to Ollama for contextual analysis and threat classification. The analyzed results were then centralized in a dedicated database powering real-time security dashboards and automated response orchestration against detected attacks.",
-  tech: ["Wazuh", "Ollama", "SOAR", "VPN", "SSH", "Threat Intelligence",],
-  category: ["soc", "ai"],
-  highlight: "AI-assisted detection, automated incident response, and real-time SOC orchestration",
-  icon: Shield,
-  github: "https://github.com/mourad-el-ouatik",
-}
+  {
+    title: "AI-Driven Multi-Tenant SOC Architecture",
+    period: "March 2026 – April 2026",
+    description: "Designed and implemented an AI-enhanced multi-tenant SOC architecture integrating Wazuh SIEM for real-time threat detection, Ollama-based AI analysis for intelligent alert investigation, and automated SOAR-driven incident response workflows. Security events detected by Wazuh were securely transmitted through SSH tunnels over VPN infrastructure to Ollama for contextual analysis and threat classification. The analyzed results were then centralized in a dedicated database powering real-time security dashboards and automated response orchestration against detected attacks.",
+    tech: ["Wazuh", "Ollama", "SOAR", "VPN", "SSH", "Threat Intelligence",],
+    category: ["soc", "ai"],
+    highlight: "AI-assisted detection, automated incident response, and real-time SOC orchestration",
+    icon: Shield,
+    github: "https://github.com/mourad-el-ouatik",
+  },
   {
     title: "SOC Architecture — Client ↔ MSSP",
     period: "Feb 2026 - Mar 206",
