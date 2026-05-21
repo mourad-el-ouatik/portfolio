@@ -7,23 +7,25 @@ import { FileText, BookOpen, Calendar, ArrowRight } from "lucide-react"
 
 const publications = [
   {
-    type: "Ongoing Research",
-    title: "Post-Quantum Cryptographic Schemes for IoT Authentication",
-    description: "Investigating the implementation of lattice-based cryptographic algorithms (Kyber, Dilithium) for resource-constrained IoT devices.",
+    type: "Research Interest",
+    title: "AI-Powered Threat Detection in IT Environments",
+    description: "Exploring machine learning approaches for anomaly detection and automated threat response in IT architectures.",
+    status: "Planned",
+  },
+  {
+    type: "Research Interest",
+    title: "AI-Driven SOC Automation & Intelligent Threat Analysis",
+    description:
+      "Exploring the integration of AI models such as Ollama within SOC environments to enhance alert analysis, automate threat classification, and orchestrate intelligent incident response workflows in multi-tenant security architectures.",
     status: "In Progress",
   },
   {
-    type: "Research Interest",
-    title: "AI-Powered Threat Detection in Cloud Environments",
-    description: "Exploring machine learning approaches for anomaly detection and automated threat response in multi-cloud architectures.",
-    status: "Planned",
-  },
-  {
-    type: "Research Interest",
-    title: "Zero-Trust Security Models for MSSP Architectures",
-    description: "Designing zero-trust frameworks for managed security service providers handling multi-tenant environments.",
-    status: "Planned",
-  },
+  type: "Research Interest",
+  title: "AI-Assisted Mobile Application Security Analysis",
+  description:
+    "Researching intelligent Android application security analysis techniques combining static reverse engineering, behavioral inspection, and AI-assisted malware detection to identify vulnerabilities, malicious patterns, and mobile threats in APK environments.",
+  status: "Done",
+},
 ]
 
 const conferences = [
