@@ -19,8 +19,7 @@ const projects = [
   {
     title: "AI-Enhanced APK Security Analysis Platform",
     period: "May 2026 – June 2026",
-    description:"Engineered a full-stack Android application security analysis platform combining static reverse engineering and AI-assisted threat detection. Integrated JADX-based APK decompilation, automated permission and code inspection, malicious behavior detection, and Quark Engine-powered AI analysis to identify security vulnerabilities, suspicious patterns, and potential malware indicators in Android applications.",
-    tech: ["Java", "JADX", "Quark Engine", "Python", "Bash", "HTML", "Android Security", ],
+    description: "Android application security analysis platform combining JADX reverse engineering, automated static analysis, and AI-assisted malware detection using Quark Engine.",    tech: ["Java", "JADX", "Quark Engine", "Python", "Bash", "HTML", "Android Security", ],
     category: ["soc", "ai"],
     highlight: "Automated APK reverse engineering and AI-assisted mobile threat analysis",
     icon: Smartphone,
@@ -29,8 +28,7 @@ const projects = [
   {
     title: "AI-Driven Multi-Tenant SOC Architecture",
     period: "March 2026 – April 2026",
-    description: "Designed and implemented an AI-enhanced multi-tenant SOC architecture integrating Wazuh SIEM for real-time threat detection, Ollama-based AI analysis for intelligent alert investigation, and automated SOAR-driven incident response workflows. Security events detected by Wazuh were securely transmitted through SSH tunnels over VPN infrastructure to Ollama for contextual analysis and threat classification. The analyzed results were then centralized in a dedicated database powering real-time security dashboards and automated response orchestration against detected attacks.",
-    tech: ["Wazuh", "Ollama", "SOAR", "VPN", "SSH", "Threat Intelligence",],
+    description: "AI-enhanced SOC architecture integrating Wazuh SIEM, Ollama-based alert analysis, automated SOAR response workflows, and real-time threat intelligence visualization.",    tech: ["Wazuh", "Ollama", "SOAR", "VPN", "SSH", "Threat Intelligence",],
     category: ["soc", "ai"],
     highlight: "AI-assisted detection, automated incident response, and real-time SOC orchestration",
     icon: Shield,
@@ -91,7 +89,7 @@ const projects = [
   {
     title: "AI-Powered Gmail Phishing Detection System",
     period: "Jan 2026",
-    description: "Developed an intelligent phishing detection platform for Gmail capable of analyzing incoming emails in real time using machine learning and natural language processing techniques. The system leverages TF-IDF vectorization with supervised classification models to identify phishing attempts, calculate dynamic risk scores, detect malicious or suspicious URLs, and minimize false positives through contextual email analysis. Designed with a scalable event-processing architecture for real-time threat monitoring and visualization.",
+    description: "Real-time Gmail phishing detection using machine learning-based email analysis, dynamic risk scoring, and malicious URL identification.",
     tech: ["Python", "Machine Learning", "TF-IDF", "Scikit-learn", "Kafka", "Spark", "Streamlit", "Email Security",],
     category: ["ai"],
     highlight: "Real-time AI-driven phishing detection and email threat scoring",
