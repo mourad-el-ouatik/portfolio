@@ -3,10 +3,11 @@
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef, useState } from "react"
-import { Github, ExternalLink, Shield, Globe, GitBranch, Database, Eye, Network, Atom, GraduationCap, Landmark, ShieldCheck, Box } from "lucide-react"
+import { Github, ExternalLink, Shield, Globe, GitBranch, Database, Eye, Network, Atom, GraduationCap, Landmark, ShieldCheck, Box, Smartphone, Mail } from "lucide-react"
 
 const categories = [
   { id: "all", label: "All Projects" },
+  { id: "ai", label: "AI" },
   { id: "devsecops", label: "DevSecOps" },
   { id: "cloud", label: "Cloud Security" },
   { id: "soc", label: "SOC" },
@@ -16,8 +17,28 @@ const categories = [
 
 const projects = [
   {
+    title: "AI-Enhanced APK Security Analysis Platform",
+    period: "May 2026 – June 2026",
+    description:"Engineered a full-stack Android application security analysis platform combining static reverse engineering and AI-assisted threat detection. Integrated JADX-based APK decompilation, automated permission and code inspection, malicious behavior detection, and Quark Engine-powered AI analysis to identify security vulnerabilities, suspicious patterns, and potential malware indicators in Android applications.",
+    tech: ["Java", "JADX", "Quark Engine", "Python", "Bash", "HTML", "Android Security", ],
+    category: ["soc", "ai"],
+    highlight: "Automated APK reverse engineering and AI-assisted mobile threat analysis",
+    icon: Smartphone,
+    github: "https://github.com/mourad-el-ouatik/secure-apk-analyzer",
+  },
+{
+  title: "AI-Driven Multi-Tenant SOC Architecture",
+  period: "March 2026 – April 2026",
+  description: "Designed and implemented an AI-enhanced multi-tenant SOC architecture integrating Wazuh SIEM for real-time threat detection, Ollama-based AI analysis for intelligent alert investigation, and automated SOAR-driven incident response workflows. Security events detected by Wazuh were securely transmitted through SSH tunnels over VPN infrastructure to Ollama for contextual analysis and threat classification. The analyzed results were then centralized in a dedicated database powering real-time security dashboards and automated response orchestration against detected attacks.",
+  tech: ["Wazuh", "Ollama", "SOAR", "VPN", "SSH", "Threat Intelligence",],
+  category: ["soc", "ai"],
+  highlight: "AI-assisted detection, automated incident response, and real-time SOC orchestration",
+  icon: Shield,
+  github: "https://github.com/mourad-el-ouatik",
+}
+  {
     title: "SOC Architecture — Client ↔ MSSP",
-    period: "Feb 2026 - Now",
+    period: "Feb 2026 - Mar 206",
     description: "Designed a full multi-tenant SOC architecture with a 3-node Wazuh SIEM cluster, RTIR + Cortex integration for automated artifact enrichment and incident response.",
     tech: ["Wazuh", "RTIR", "Cortex", "MISP", "OpenCTI", "SOAR"],
     category: ["soc"],
@@ -27,14 +48,14 @@ const projects = [
   },
   {
     title: "AISEC 2026 — Conference Website",
-    period: "March 2026",
+    period: "Mar 2026",
     description: "Designed and developed the official website for the AISEC 2026 international cybersecurity conference hosted at UCA.",
     tech: ["HTML/CSS", "JavaScript", "Responsive Design", "Web Security"],
     category: ["web"],
     highlight: "Pending deployment at aisec.uca.ma",
     icon: Globe,
     link: "https://aisec.uca.ma",
-    github: "https://github.com/mourad-el-ouatik",
+    github: "https://aisec.uca.ma",
   },
   {
     title: "Secure CI/CD Pipeline",
@@ -50,7 +71,7 @@ const projects = [
     title: "Folyo — Secure Order Platform",
     period: "Jan 2026",
     description: "Full-stack secure order management system with security-by-design. Includes CI/CD pipelines with SAST/DAST, Dockerized infrastructure, and RBAC-enforced access.",
-    tech: ["Docker", "CI/CD", "SAST/DAST", "RBAC", "DevSecOps"],
+    tech: ["Docker", "CI/CD", "SAST/DAST", "RBAC", "DevSecOps", "PHP", "SQL"],
     category: ["devsecops", "web"],
     highlight: "Full-stack secure platform — built solo",
     icon: Box,
@@ -66,6 +87,18 @@ const projects = [
     icon: Database,
     github: "https://github.com/mourad-el-ouatik",
   },
+
+  {
+    title: "AI-Powered Gmail Phishing Detection System",
+    period: "Jan 2026",
+    description: "Developed an intelligent phishing detection platform for Gmail capable of analyzing incoming emails in real time using machine learning and natural language processing techniques. The system leverages TF-IDF vectorization with supervised classification models to identify phishing attempts, calculate dynamic risk scores, detect malicious or suspicious URLs, and minimize false positives through contextual email analysis. Designed with a scalable event-processing architecture for real-time threat monitoring and visualization.",
+    tech: ["Python", "Machine Learning", "TF-IDF", "Scikit-learn", "Kafka", "Spark", "Streamlit", "Email Security",],
+    category: ["ai"],
+    highlight: "Real-time AI-driven phishing detection and email threat scoring",
+    icon: Mail,
+    github: "https://github.com/mourad-el-ouatik/-Smart-Phishing-Detector-for-Gmail",
+  }
+      
   {
     title: "Enterprise IDS Architecture",
     period: "Jun - Aug 2025",
@@ -91,7 +124,7 @@ const projects = [
     period: "Nov - Dec 2025",
     description: "Software-Defined Networking firewall with dynamic traffic control and self-programmable security rules using OpenFlow protocol.",
     tech: ["OpenFlow", "Python", "Ryu", "NameSpaces"],
-    category: ["devsecops"],
+    category: ["devsecops", "soc"],
     highlight: "Dynamic rule programming",
     icon: Network,
     github: "https://github.com/mourad-el-ouatik",
