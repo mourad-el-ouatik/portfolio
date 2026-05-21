@@ -14,18 +14,18 @@ const certifications = [
     icon: Smartphone,
   },
   {
-    name: "FCA - FortiGate 7.6 Operator",
-    issuer: "Fortinet",
-    date: "December 2025",
-    status: "verified",
-    icon: Network,
-  },
-  {
     name: "Mobile app security",
     issuer: "MLIAEdu",
     date: "June 2026",
     status: "verified",
     icon: ShieldCheck,
+  },
+  {
+    name: "FCA - FortiGate 7.6 Operator",
+    issuer: "Fortinet",
+    date: "December 2025",
+    status: "verified",
+    icon: Network,
   },
 ]
 
