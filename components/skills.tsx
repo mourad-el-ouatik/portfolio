@@ -9,7 +9,7 @@ const skills = [
   {
     category: "Cloud & Infrastructure",
     icon: Cloud,
-    tools: ["Oracle Cloud", "Terraform", "Docker", "Kubernetes"],
+    tools: ["Azure", "Terraform", "Docker", "Kubernetes", "OpenStack"],
     level: 65,
   },
   {
@@ -21,19 +21,19 @@ const skills = [
   {
     category: "Security Tools",
     icon: Shield,
-    tools: ["Suricata", "Snort", "Proxmox", "Honeypots", "Wazuh", "Forensics"],
+    tools: ["Suricata", "Snort", "Proxmox", "Honeypots", "Wazuh", "Forensics", "Zeek", "Splunk"],
     level: 98,
   },
   {
     category: "Threat Intelligence",
     icon: Bug,
-    tools: ["RTIR", "Cortex", "IRIS", "SOAR", "OpenCTI", "MISP"],
+    tools: ["RTIR", "Cortex", "IRIS", "SOAR", "OpenCTI", "MISP", "TheHive", "Ollama"],
     level: 88,
   },
   {
     category: "Networking & VPN",
     icon: Radio,
-    tools: ["VPN", "RBAC", "Firewalls", "DNS", "SSH"],
+    tools: ["VPN", "RBAC", "Firewalls", "DNS", "SSH", "FTP"],
     level: 98,
   },
   {
@@ -45,7 +45,7 @@ const skills = [
   {
     category: "Programming",
     icon: Code,
-    tools: ["Python", "C", "JavaScript", "PHP", "Bash", "PowerShell"],
+    tools: ["Python", "Java", "C", "JavaScript", "PHP", "Bash", "PowerShell"],
     level: 98,
   },
   {
@@ -57,7 +57,7 @@ const skills = [
   {
     category: "Web Development",
     icon: Globe,
-    tools: ["HTML", "CSS", "Tailwind", "JavaScript", "PHP"],
+    tools: ["HTML", "CSS", "Tailwind", "JavaScript", "PHP", "React"],
     level: 100,
   },
 ]
