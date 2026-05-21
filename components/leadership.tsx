@@ -9,6 +9,7 @@ const leadership = [
   {
     organization: "MUN ENSA Marrakech",
     icon: Landmark,
+    image: "/bg1.png",
     roles: [
       {
         title: "Co-Founder",
@@ -27,6 +28,7 @@ const leadership = [
   {
     organization: "Club Self-Dev",
     icon: Users,
+    image: "/bg2.png",
     roles: [
       {
         title: "President",
@@ -78,6 +80,18 @@ export function Leadership() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="bg-card border border-border rounded-xl overflow-hidden hover:border-primary/50 transition-colors"
               >
+                {/* Image Banner */}
+                <div className="relative h-72 overflow-hidden">
+                  <img
+                    src={org.image}
+                    alt={org.organization}
+                    className="w-full h-full object-cover"
+                  />
+                
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
+                </div>
+                
                 {/* Header */}
                 <div className="p-6 border-b border-border flex items-center gap-4">
                   <div className="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg">
