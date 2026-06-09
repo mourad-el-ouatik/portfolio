@@ -35,7 +35,7 @@ const experience = [
       "Built a fully automated SOC pipeline: Ollama-powered LLM analyses SIEM alerts and delivers verdicts to SOAR for autonomous incident response.",
       "Developed an analyst-facing contextual chatbot to surface threat insights in real time.",
       "Reduced Mean Time to Respond (MTTR) by 85%; all components orchestrated via a centralised PostgreSQL database.",    ],
-    tech: ["Ollama", "SOAR", " AI-driven incident triage", "chatbot"],
+    tech: ["Ollama", "SOAR", " AI", "chatbot"],
     icon: Sparkles,
     type: "work",
   },
