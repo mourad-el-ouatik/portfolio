@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
-import { Briefcase, GraduationCap, Shield, Building, Code, GitBranch } from "lucide-react"
+import { Briefcase, GraduationCap, Shield, Building, Code, GitBranch, Sparkles } from "lucide-react"
 
 const education = [
   {
@@ -27,10 +27,22 @@ const education = [
 ]
 
 const experience = [
+    {
+    title: "SOC & AI Engineer (Internship)",
+    organization: "ABsec Cybersecurity",
+    period: "May 2026 - Present",
+    description: [
+      "Built a fully automated SOC pipeline: Ollama-powered LLM analyses SIEM alerts and delivers verdicts to SOAR for autonomous incident response.",
+      "Developed an analyst-facing contextual chatbot to surface threat insights in real time.",
+      "Reduced Mean Time to Respond (MTTR) by 85%; all components orchestrated via a centralised PostgreSQL database.",    ],
+    tech: ["Ollama", "SOAR", " AI-driven incident triage", "chatbot"],
+    icon: Sparkles,
+    type: "work",
+  },
   {
     title: "Security Architect (Internship)",
     organization: "ABsec Cybersecurity",
-    period: "February 2026 - Present",
+    period: "February 2026 - May 2026",
     description: [
       "Designed multi-tenant SOC architecture (Client ↔ MSSP) covering detection, incident response, and threat intelligence",
       "Architected 3-node Wazuh cluster for centralized SIEM and real-time alert visualization",
