@@ -32,7 +32,7 @@ const projects = [
     category: ["soc", "ai"],
     highlight: "AI-assisted detection, automated incident response, and real-time SOC orchestration",
     icon: Shield,
-    github: "https://github.com/mourad-el-ouatik",
+    github: "https://github.com/mourad-el-ouatik/AI-based-incident-analyser",
   },
   {
     title: "SOC Architecture — Client ↔ MSSP",
@@ -83,7 +83,7 @@ const projects = [
     category: ["cloud"],
     highlight: "10K+ events/sec",
     icon: Database,
-    github: "https://github.com/mourad-el-ouatik",
+    github: "https://github.com/mourad-el-ouatik/Real-Time-Big-Data-Architecture",
   },
 
   {
@@ -145,7 +145,7 @@ const projects = [
     category: ["web"],
     highlight: "Education Management",
     icon: GraduationCap,
-    github: "https://github.com/mourad-el-ouatik",
+    github: "https://github.com/mourad-el-ouatik/School_management",
   },
   {
     title: "MUN ENSA Marrakech Website",
@@ -155,7 +155,7 @@ const projects = [
     category: ["web"],
     highlight: "Event Management",
     icon: Landmark,
-    github: "https://github.com/mourad-el-ouatik",
+    github: "https://github.com/mourad-el-ouatik/MUN-ENSA_M-website",
   },
   {
     title: "Cyprotect Platform",
@@ -165,7 +165,7 @@ const projects = [
     category: ["crypto", "web"],
     highlight: "Security Services Suite",
     icon: ShieldCheck,
-    github: "https://github.com/mourad-el-ouatik",
+    github: "https://github.com/mourad-el-ouatik/CyProtect",
   },
 ]
 
