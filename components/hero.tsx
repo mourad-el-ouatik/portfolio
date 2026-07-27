@@ -33,7 +33,7 @@ export function Hero() {
               className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full"
             >
               <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-              <span className="text-sm text-primary font-medium">Available for PFA Internship</span>
+              <span className="text-sm text-primary font-medium">Available for PFE Internship</span>
             </motion.div>
 
             {/* Main Title */}
