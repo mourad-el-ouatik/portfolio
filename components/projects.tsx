@@ -17,6 +17,16 @@ const categories = [
 
 const projects = [
   {
+    title: "Zero Trust & AI-Driven SOC Architecture",
+    period: "Jul 2026 - Sep 2026",
+    description: "Designed and deployed a Zero Trust architecture (NIST SP 800-207) with network segmentation, RBAC, and secure secrets management. Orchestrated an AI-driven hybrid SOC on Docker Swarm/Proxmox HA, integrating Wazuh, TheHive, Cortex, OpenCTI, MISP, Zeek, Keycloak, HashiCorp Vault, Traefik, Teleport, Loki, and FleetDM. Developed an LLM-based incident analysis engine with RAG architecture for automated alert analysis, contextual enrichment, and AI-assisted reporting.",
+    tech: ["Zero Trust", "NIST 800-207", "Docker Swarm", "Proxmox", "Wazuh", "TheHive", "Cortex", "OpenCTI", "MISP", "Zeek", "Keycloak", "HashiCorp Vault", "Ollama", "RAG", "SOAR", "DevSecOps"],
+    category: ["soc", "ai", "cloud"],
+    highlight: "85% MTTR reduction · Full Zero Trust + AI SOC stack",
+    icon: Shield,
+    github: "https://github.com/mourad-el-ouatik",
+  },
+  {
     title: "AI-Enhanced APK Security Analysis Platform",
     period: "May 2026 – June 2026",
     description: "Android application security analysis platform combining JADX reverse engineering, automated static analysis, and AI-assisted malware detection using Quark Engine.",    tech: ["Java", "JADX", "Quark Engine", "Python", "Bash", "HTML", "Android Security", ],
