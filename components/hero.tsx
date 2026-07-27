@@ -99,7 +99,7 @@ export function Hero() {
                 Get In Touch
               </a>
               <a
-                href="/CV_Mourad_EL_OUATIK_COMPLET_FR.pdf"
+                href="./CV_Mourad_EL_OUATIK_COMPLET_FR.pdf"
                 download
                 className="inline-flex items-center gap-2 px-6 py-3 text-muted-foreground hover:text-foreground transition-colors"
               >
