@@ -7,22 +7,6 @@ import { Briefcase, GraduationCap, Shield, Building, Code, GitBranch, Sparkles }
 
 const education = [
   {
-    title: "Cybersecurity Architect — Zero Trust & AI-Driven SOC (Internship)",
-    organization: "ABsec Cybersecurity",
-    period: "July 2026 - September 2026",
-    description: [
-      "Designed and deployed a Zero Trust architecture compliant with NIST SP 800-207, incorporating network segmentation, centralized identity management (RBAC), and secure secrets management.",
-      "Architected and orchestrated an AI-driven hybrid SOC based on a Docker Swarm cluster distributed across a high-availability Proxmox infrastructure.",
-      "Integrated a comprehensive cybersecurity ecosystem comprising Wazuh, TheHive, Cortex, OpenCTI, MISP, Zeek, Keycloak, HashiCorp Vault, Traefik, Teleport, Loki, and FleetDM.",
-      "Developed an incident analysis engine based on local LLMs (Ollama), enhanced by a RAG architecture and a vector database to automate analysis, contextual enrichment, and support for SOC analysts.",
-      "Designed automated SOAR workflows ensuring event correlation, threat intelligence enrichment, security case creation, and AI-assisted incident report generation.",
-      "Implemented a secure and scalable infrastructure incorporating high availability, centralized logging, monitoring, automated backups, and DevSecOps best practices.",
-    ],
-    tech: ["Zero Trust", "NIST 800-207", "Docker Swarm", "Proxmox", "Wazuh", "TheHive", "Cortex", "OpenCTI", "MISP", "Zeek", "Keycloak", "HashiCorp Vault", "Ollama", "RAG", "SOAR", "DevSecOps"],
-    icon: Shield,
-    type: "work",
-  },
-  {
     title: "Engineering Cycle",
     organization: "ENSA Marrakech",
     subtitle: "Cyber Defense & Embedded Telecommunications",
@@ -43,7 +27,23 @@ const education = [
 ]
 
 const experience = [
-    {
+  {
+    title: "Cybersecurity Architect — Zero Trust & AI-Driven SOC (Internship)",
+    organization: "ABsec Cybersecurity",
+    period: "July 2026 - September 2026",
+    description: [
+      "Designed and deployed a Zero Trust architecture compliant with NIST SP 800-207, incorporating network segmentation, centralized identity management (RBAC), and secure secrets management.",
+      "Architected and orchestrated an AI-driven hybrid SOC based on a Docker Swarm cluster distributed across a high-availability Proxmox infrastructure.",
+      "Integrated a comprehensive cybersecurity ecosystem comprising Wazuh, TheHive, Cortex, OpenCTI, MISP, Zeek, Keycloak, HashiCorp Vault, Traefik, Teleport, Loki, and FleetDM.",
+      "Developed an incident analysis engine based on local LLMs (Ollama), enhanced by a RAG architecture and a vector database to automate analysis, contextual enrichment, and support for SOC analysts.",
+      "Designed automated SOAR workflows ensuring event correlation, threat intelligence enrichment, security case creation, and AI-assisted incident report generation.",
+      "Implemented a secure and scalable infrastructure incorporating high availability, centralized logging, monitoring, automated backups, and DevSecOps best practices.",
+    ],
+    tech: ["Zero Trust", "NIST 800-207", "Docker Swarm", "Proxmox", "Wazuh", "TheHive", "Cortex", "OpenCTI", "MISP", "Zeek", "Keycloak", "HashiCorp Vault", "Ollama", "RAG", "SOAR", "DevSecOps"],
+    icon: Shield,
+    type: "work",
+  },
+  {
     title: "SOC & AI Engineer (Internship)",
     organization: "ABsec Cybersecurity",
     period: "May 2026 - Present",
