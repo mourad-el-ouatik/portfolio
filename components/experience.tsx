@@ -46,7 +46,7 @@ const experience = [
   {
     title: "SOC & AI Engineer (Internship)",
     organization: "ABsec Cybersecurity",
-    period: "May 2026 - Present",
+    period: "May 2026 - July 2026",
     description: [
       "Built a fully automated SOC pipeline: Ollama-powered LLM analyses SIEM alerts and delivers verdicts to SOAR for autonomous incident response.",
       "Developed an analyst-facing contextual chatbot to surface threat insights in real time.",
