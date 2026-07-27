@@ -127,7 +127,7 @@ export function Contact() {
                 <div className="w-3 h-3 bg-primary rounded-full animate-pulse" />
                 <div>
                   <p className="font-medium text-foreground">Available for Opportunities</p>
-                  <p className="text-sm text-muted-foreground">PFA Internship (1-2 months)</p>
+                  <p className="text-sm text-muted-foreground">6 to 8 monthsPFE Internship (On site / Remote)</p>
                 </div>
               </div>
             </div>
