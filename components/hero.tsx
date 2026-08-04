@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Github, Linkedin, Mail, Award, ArrowDown, Download, MapPin } from "lucide-react"
-import Image from "next/image"
+import { useEffect } from "react"
 
 const stats = [
   { value: "38+", label: "Security Projects" },
@@ -16,13 +16,28 @@ const techStack = [
 ]
 
 export function Hero() {
+  // Load Credly embed script once
+  useEffect(() => {
+    const script = document.createElement('script')
+    script.src = '//cdn.credly.com/assets/utilities/embed.js'
+    script.async = true
+    script.type = 'text/javascript'
+    document.body.appendChild(script)
+
+    return () => {
+      // Cleanup
+      const scripts = document.querySelectorAll('script[src="//cdn.credly.com/assets/utilities/embed.js"]')
+      scripts.forEach(s => s.remove())
+    }
+  }, [])
+
   return (
     <section id="hero" className="min-h-screen flex flex-col justify-center relative px-6 lg:px-12 pt-20">
       {/* Subtle grid background */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,oklch(0.25_0.01_250)_1px,transparent_1px),linear-gradient(to_bottom,oklch(0.25_0.01_250)_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20" />
       
       <div className="max-w-6xl mx-auto w-full relative z-10">
-        <div className="grid lg:grid-cols-[1fr,auto] gap-12 lg:gap-20 items-center">
+        <div className="grid lg:grid-cols-[1fr,auto] gap-12 lg:gap-20 items-start">
           {/* Left Content */}
           <div className="space-y-8">
             {/* Status Badge */}
@@ -149,26 +164,40 @@ export function Hero() {
             </motion.div>
           </div>
 
-          {/* Right Content - Profile Image */}
+          {/* Right Content - Credly Badges */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="hidden lg:block"
+            className="flex flex-col items-center gap-4"
           >
-            <div className="relative">
-              <div className="w-72 h-72 relative rounded-2xl overflow-hidden border border-border">
-                <Image
-                  src="/profile.jpeg"
-                  alt="Mourad EL OUATIK"
-                  fill
-                  className="object-cover"
-                  priority
+            <div className="bg-secondary/30 backdrop-blur-sm p-4 rounded-2xl border border-border">
+              <p className="text-xs font-mono text-muted-foreground text-center mb-3">Certifications</p>
+              <div className="flex flex-col gap-4 items-center">
+                {/* Badge 1 */}
+                <div 
+                  data-iframe-width="150" 
+                  data-iframe-height="270" 
+                  data-share-badge-id="03f5945d-b591-4cc6-beb6-dec540bc578d" 
+                  data-share-badge-host="https://www.credly.com"
+                />
+                
+                {/* Badge 2 */}
+                <div 
+                  data-iframe-width="150" 
+                  data-iframe-height="270" 
+                  data-share-badge-id="ea29b4f1-b0b8-4e32-bdde-bc2838616cad" 
+                  data-share-badge-host="https://www.credly.com"
+                />
+                
+                {/* Badge 3 */}
+                <div 
+                  data-iframe-width="150" 
+                  data-iframe-height="270" 
+                  data-share-badge-id="53c8d5cb-fdc6-4d78-9326-4d86d16adc1f" 
+                  data-share-badge-host="https://www.credly.com"
                 />
               </div>
-              {/* Decorative elements */}
-              <div className="absolute -top-4 -right-4 w-24 h-24 border border-primary/30 rounded-lg" />
-              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-primary/10 rounded-lg" />
             </div>
           </motion.div>
         </div>
