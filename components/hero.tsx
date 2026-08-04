@@ -37,7 +37,7 @@ export function Hero() {
       <div className="absolute inset-0 bg-[linear-gradient(to_right,oklch(0.25_0.01_250)_1px,transparent_1px),linear-gradient(to_bottom,oklch(0.25_0.01_250)_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20" />
       
       <div className="max-w-6xl mx-auto w-full relative z-10">
-        <div className="grid lg:grid-cols-[1fr,auto] gap-12 lg:gap-20 items-start">
+        <div className="grid lg:grid-cols-[1fr,auto] gap-12 lg:gap-20 items-center">
           {/* Left Content */}
           <div className="space-y-8">
             {/* Status Badge */}
@@ -164,38 +164,41 @@ export function Hero() {
             </motion.div>
           </div>
 
-          {/* Right Content - Credly Badges */}
+          {/* Right Content - Credly Badges Horizontal */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="flex flex-col items-center gap-4"
+            className="flex flex-col items-center"
           >
-            <div className="bg-secondary/30 backdrop-blur-sm p-4 rounded-2xl border border-border">
-              <p className="text-xs font-mono text-muted-foreground text-center mb-3">Certifications</p>
-              <div className="flex flex-col gap-4 items-center">
+            <div className="bg-secondary/30 backdrop-blur-sm p-6 rounded-2xl border border-border w-full max-w-md">
+              <p className="text-xs font-mono text-muted-foreground text-center mb-4">Certifications</p>
+              <div className="flex flex-row justify-center items-center gap-2 flex-wrap">
                 {/* Badge 1 */}
                 <div 
-                  data-iframe-width="150" 
-                  data-iframe-height="270" 
+                  data-iframe-width="120" 
+                  data-iframe-height="220" 
                   data-share-badge-id="03f5945d-b591-4cc6-beb6-dec540bc578d" 
                   data-share-badge-host="https://www.credly.com"
+                  className="transform scale-90 origin-center"
                 />
                 
                 {/* Badge 2 */}
                 <div 
-                  data-iframe-width="150" 
-                  data-iframe-height="270" 
+                  data-iframe-width="120" 
+                  data-iframe-height="220" 
                   data-share-badge-id="ea29b4f1-b0b8-4e32-bdde-bc2838616cad" 
                   data-share-badge-host="https://www.credly.com"
+                  className="transform scale-90 origin-center"
                 />
                 
                 {/* Badge 3 */}
                 <div 
-                  data-iframe-width="150" 
-                  data-iframe-height="270" 
+                  data-iframe-width="120" 
+                  data-iframe-height="220" 
                   data-share-badge-id="53c8d5cb-fdc6-4d78-9326-4d86d16adc1f" 
                   data-share-badge-host="https://www.credly.com"
+                  className="transform scale-90 origin-center"
                 />
               </div>
             </div>
