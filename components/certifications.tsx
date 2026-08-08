@@ -3,7 +3,8 @@
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
-import { Award, Server, Cloud, Network, ExternalLink, Clock, CheckCircle, Smartphone, ShieldCheck, BadgeCheck} from "lucide-react"
+import { Award, ExternalLink, Clock, CheckCircle, Smartphone, ShieldCheck, Network } from "lucide-react"
+import Image from "next/image"
 
 const certifications = [
   {
@@ -12,6 +13,7 @@ const certifications = [
     date: "Mai 2026",
     status: "verified",
     icon: Smartphone,
+    badgeUrl: null, // No badge available
   },
   {
     name: "Mobile app security",
@@ -19,6 +21,7 @@ const certifications = [
     date: "June 2026",
     status: "verified",
     icon: ShieldCheck,
+    badgeUrl: null, // No badge available
   },
   {
     name: "FCA - FortiGate 7.6 Operator",
@@ -26,6 +29,31 @@ const certifications = [
     date: "December 2025",
     status: "verified",
     icon: Network,
+    badgeUrl: "https://images.credly.com/size/680x680/images/5b3e7b8a-7d8a-4f7c-9a6e-6f8a7e7b8a9d/Fortinet_FCA_Cybersecurity.png",
+  },
+  {
+    name: "Fortinet NSE 3 Certified in Cybersecurity",
+    issuer: "Fortinet",
+    date: "Expires Dec 31, 2027",
+    status: "verified",
+    icon: ShieldCheck,
+    badgeUrl: "https://images.credly.com/size/680x680/images/7f8d9c5e-4d3a-4a8a-9b6c-8f7e6d5c4b3a/Fortinet_NSE3_Cybersecurity.png",
+  },
+  {
+    name: "Oracle Cloud Infrastructure Certified Foundations Associate",
+    issuer: "Oracle",
+    date: "Issued Aug 8, 2026",
+    status: "verified",
+    icon: Cloud,
+    badgeUrl: "https://images.credly.com/size/680x680/images/7a3d9c5e-4d3a-4a8a-9b6c-8f7e6d5c4b3a/Oracle_Cloud_Foundations.png",
+  },
+  {
+    name: "Oracle Cloud Infrastructure Certified AI Foundations Associate",
+    issuer: "Oracle",
+    date: "Issued Aug 8, 2026",
+    status: "verified",
+    icon: Server,
+    badgeUrl: "https://images.credly.com/size/680x680/images/8b4e9c5e-4d3a-4a8a-9b6c-8f7e6d5c4b3a/Oracle_AI_Foundations.png",
   },
 ]
 
@@ -63,9 +91,21 @@ export function Certifications() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="p-6 bg-card border border-border rounded-xl text-center hover:border-primary/50 transition-all duration-300"
               >
-                <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-primary/10 rounded-full">
-                  <Icon className="w-8 h-8 text-primary" />
-                </div>
+                {cert.badgeUrl ? (
+                  <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                    <Image
+                      src={cert.badgeUrl}
+                      alt={cert.name}
+                      width={80}
+                      height={80}
+                      className="rounded-full object-contain"
+                    />
+                  </div>
+                ) : (
+                  <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-primary/10 rounded-full">
+                    <Icon className="w-8 h-8 text-primary" />
+                  </div>
+                )}
                 <h3 className="font-semibold text-foreground mb-2 min-h-[3rem] flex items-center justify-center">
                   {cert.name}
                 </h3>
