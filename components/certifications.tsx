@@ -57,11 +57,6 @@ const certifications = [
   },
 ]
 
-/* Badge images */
-img[alt*="Certification"] {
-  box-shadow: 0 0 0 2px rgba(0,0,0,0.1);
-}
-
 export function Certifications() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
