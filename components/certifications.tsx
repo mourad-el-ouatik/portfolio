@@ -16,12 +16,12 @@ const certifications = [
     badgeUrl: null, // No badge available
   },
   {
-    name: "Mobile app security",
-    issuer: "MLIAEdu",
-    date: "June 2026",
+    name: "Fortinet Certified Associate Cybersecurity",
+    issuer: "Fortinet",
+    date: "December 2025",
     status: "verified",
     icon: ShieldCheck,
-    badgeUrl: null, // No badge available
+    badgeUrl: "https://www.credly.com/badges/ea29b4f1-b0b8-4e32-bdde-bc2838616cad/public_url",
   },
   {
     name: "FCA - FortiGate 7.6 Operator",
@@ -29,7 +29,7 @@ const certifications = [
     date: "December 2025",
     status: "verified",
     icon: Network,
-    badgeUrl: "https://images.credly.com/size/680x680/images/5b3e7b8a-7d8a-4f7c-9a6e-6f8a7e7b8a9d/Fortinet_FCA_Cybersecurity.png",
+    badgeUrl: "https://www.credly.com/badges/53c8d5cb-fdc6-4d78-9326-4d86d16adc1f/public_url",
   },
   {
     name: "Fortinet NSE 3 Certified in Cybersecurity",
@@ -37,7 +37,7 @@ const certifications = [
     date: "Expires Dec 31, 2027",
     status: "verified",
     icon: ShieldCheck,
-    badgeUrl: "https://images.credly.com/size/680x680/images/7f8d9c5e-4d3a-4a8a-9b6c-8f7e6d5c4b3a/Fortinet_NSE3_Cybersecurity.png",
+    badgeUrl: "https://www.credly.com/badges/03f5945d-b591-4cc6-beb6-dec540bc578d/public_url",
   },
   {
     name: "Oracle Cloud Infrastructure Certified Foundations Associate",
@@ -45,7 +45,7 @@ const certifications = [
     date: "Issued Aug 8, 2026",
     status: "verified",
     icon: Cloud,
-    badgeUrl: "https://images.credly.com/size/680x680/images/7a3d9c5e-4d3a-4a8a-9b6c-8f7e6d5c4b3a/Oracle_Cloud_Foundations.png",
+    badgeUrl: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=F36F760015F03DE6A98F380C8FBB329C67BC91D7396DBF996595025BC41E9539",
   },
   {
     name: "Oracle Cloud Infrastructure Certified AI Foundations Associate",
@@ -53,7 +53,7 @@ const certifications = [
     date: "Issued Aug 8, 2026",
     status: "verified",
     icon: Server,
-    badgeUrl: "https://images.credly.com/size/680x680/images/8b4e9c5e-4d3a-4a8a-9b6c-8f7e6d5c4b3a/Oracle_AI_Foundations.png",
+    badgeUrl: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=31EAB8CBDE5DEDE1428F6A14A98D2BEF922DB0FA73C50796DD423B3368B5C322",
   },
 ]
 
