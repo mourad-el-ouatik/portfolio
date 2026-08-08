@@ -21,7 +21,7 @@ const certifications = [
     date: "December 2025",
     status: "verified",
     icon: ShieldCheck,
-    badgeUrl: "https://www.credly.com/badges/ea29b4f1-b0b8-4e32-bdde-bc2838616cad/public_url",
+    badgeUrl: "/public/fortinet-certified-associate-cybersecurity.1.png",
   },
   {
     name: "FCA - FortiGate 7.6 Operator",
