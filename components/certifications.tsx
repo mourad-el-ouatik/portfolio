@@ -94,7 +94,7 @@ export function Certifications() {
                 {cert.badgeUrl ? (
                   <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
                     <Image
-                      src={cert.badgeUrl}
+                      href={cert.badgeUrl}
                       alt={cert.name}
                       width={80}
                       height={80}
