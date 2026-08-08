@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
-import { Award, ExternalLink, Clock, CheckCircle, Smartphone, ShieldCheck, Network } from "lucide-react"
+import { Award, ExternalLink, Clock, CheckCircle, Smartphone, ShieldCheck, Network, Cloud, Server} from "lucide-react"
 import Image from "next/image"
 
 const certifications = [
