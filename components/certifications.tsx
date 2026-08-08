@@ -21,7 +21,7 @@ const certifications = [
     date: "December 2025",
     status: "verified",
     icon: ShieldCheck,
-    badgeUrl: "public/fortinet-certified-associate-cybersecurity.1.png",
+    badgeUrl: "../public/fortinet-certified-associate-cybersecurity.1.png",
   },
   {
     name: "FCA - FortiGate 7.6 Operator",
