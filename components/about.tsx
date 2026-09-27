@@ -3,12 +3,12 @@
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
-import { Shield, Cloud, GitBranch, LineChart } from "lucide-react"
+import { Shield, ClipboardCheck, ScrollText, LineChart } from "lucide-react"
 
 const highlights = [
-  { icon: Shield, label: "Security Architect" },
-  { icon: Cloud, label: "Cloud Security" },
-  { icon: GitBranch, label: "CI/CD Security" },
+  { icon: ClipboardCheck, label: "Cyber GRC" },
+  { icon: ScrollText, label: "IT Risk & Conformité" },
+  { icon: Shield, label: "Zero Trust & IAM" },
   { icon: LineChart, label: "AI Based Threat Analytics" },
 ]
 
@@ -58,34 +58,35 @@ export function About() {
             className="space-y-6 text-muted-foreground leading-relaxed"
           >
             <p className="text-foreground text-lg font-medium">
-              4th year Engineering student specializing in Cyber Defense and Embedded 
-              Telecommunications at ENSA Marrakech, with a strong focus on cryptography, 
-              Linux/Unix systems security, and intrusion detection systems.
+              Étudiant en dernière année d'ingénierie à l'ENSA Marrakech, spécialisation
+              Cyber Défense & Télécommunications Embarquées, je recherche un stage de fin
+              d'études en conseil Cybersécurité & GRC.
             </p>
 
             <p>
-              With extensive experience developing academic and professional security projects, 
-              I have strengthened my expertise in DevSecOps practices, cloud security architecture, 
-              and real-time threat monitoring. My leadership roles as President of Self-Dev Club 
-              and Vice-President of MUN ENSA Marrakech have honed my project management and 
-              collaborative skills.
+              Mon parcours technique (Architectures, IAM, Zero Trust) associé à une expertise
+              en gouvernance et protection des données (certifié IBM GRC & Data Privacy) me
+              permet d'apporter une vision concrète et pragmatique. Mes rôles associatifs en
+              tant que Président du Club Self-Dev et Vice-Président du MUN ENSA Marrakech ont
+              renforcé mes compétences en gestion de projet et en collaboration.
             </p>
 
             <p>
-              I am passionate about designing innovative and resilient cybersecurity solutions, 
-              leveraging cutting-edge technologies like{" "}
-              <span className="text-primary">post-quantum cryptography</span>,{" "}
-              <span className="text-primary">SDN firewalls</span>, and{" "}
-              <span className="text-primary">AI-powered threat detection</span>{" "}
-              to protect modern infrastructure.
+              Passionné par l'évaluation de solutions IT et la gestion des risques, je souhaite
+              mettre mes compétences au service de clients pour piloter des chantiers de{" "}
+              <span className="text-primary">conformité ISO 27001</span>,{" "}
+              <span className="text-primary">NIST CSF</span>, tout en m'appuyant sur des
+              fondations techniques solides en{" "}
+              <span className="text-primary">Zero Trust</span> et{" "}
+              <span className="text-primary">IA appliquée à la cybersécurité</span>.
             </p>
 
             <div className="pt-6 border-t border-border">
-              <h3 className="text-foreground font-semibold mb-4">Research Interests</h3>
+              <h3 className="text-foreground font-semibold mb-4">Centres d'intérêt</h3>
               <div className="flex flex-wrap gap-2">
                 {[
-                  "Post-Quantum & Cybersecurity",
-                  "AI & Cybersecurity",
+                  "Cyber GRC & IT Risk",
+                  "ISO 27001 / NIST CSF",
                   "AI Based Threat Intelligence",
                   "Zero-Trust Architecture",
                 ].map((interest) => (

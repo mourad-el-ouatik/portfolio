@@ -21,13 +21,13 @@ const stats = [
 ]
 
 const techStack = [
-  "Docker",
-  "Terraform",
-  "Kubernetes",
-  "Python",
-  "Linux",
+  "ISO 27001",
+  "NIST CSF",
+  "IAM",
+  "Zero Trust",
+  "GRC",
   "Wazuh",
-  "Ollama",
+  "Python",
 ]
 
 const containerVariants = {
@@ -86,14 +86,14 @@ export function Hero() {
                   <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary" />
                 </span>
                 <span className="text-sm text-primary font-medium tracking-wide">
-                  Available for PFE Internship
+                  Disponible pour stage de fin d'études — Conseil Cybersécurité & GRC
                 </span>
               </div>
             </motion.div>
 
             <motion.div variants={itemVariants} className="space-y-3">
               <p className="text-muted-foreground font-mono text-sm tracking-[0.2em] uppercase">
-                Cybersecurity Engineering Student
+                Étudiant Ingénieur Cybersécurité | Cyber GRC | IT Risk GRC
               </p>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
                 <span className="text-foreground">Mourad</span>{" "}
@@ -107,20 +107,17 @@ export function Hero() {
               variants={itemVariants}
               className="text-lg text-muted-foreground max-w-xl leading-relaxed"
             >
-              I design and implement resilient cybersecurity solutions,
-              specializing in{" "}
+              Je recherche un stage de fin d'études de 6 mois en conseil
+              Cybersécurité & GRC. Mon parcours technique (Architectures, IAM, Zero Trust)
+              associé à une expertise en{" "}
               <span className="text-foreground font-medium">
-                DevSecOps automation
+                gouvernance et protection des données
               </span>
-              ,{" "}
+              {" "}(certifié IBM GRC & Data Privacy) me permet de piloter des chantiers de{" "}
               <span className="text-foreground font-medium">
-                cloud security architecture
+                conformité ISO 27001 et NIST CSF
               </span>
-              , and{" "}
-              <span className="text-foreground font-medium">
-                AI-powered threat detection
-              </span>
-              .
+              {" "}avec une vision concrète et pragmatique.
             </motion.p>
 
             <motion.div

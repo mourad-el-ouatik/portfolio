@@ -28,44 +28,43 @@ const education = [
 
 const experience = [
   {
-    title: "Cybersecurity Architect — Zero Trust & AI-Driven SOC (Internship)",
+    title: "Stage PFA — Architecte Cybersécurité, GRC & Zero Trust",
     organization: "ABsec Cybersecurity",
     period: "July 2026 - September 2026",
     description: [
-      "Designed and deployed a Zero Trust architecture compliant with NIST SP 800-207, incorporating network segmentation, centralized identity management (RBAC), and secure secrets management.",
+      "Fait évoluer l'architecture de sécurité vers un modèle Zero Trust selon NIST SP 800-207, avec IAM/RBAC, segmentation réseau et contrôle continu des accès.",
+      "Renforcé le socle de sécurité par l'intégration de mécanismes de gestion des identités, des accès et des flux, ainsi que de contrôles de sécurité adaptés aux risques identifiés.",
+      "Consolidé les capacités de supervision, détection, Threat Intelligence et gestion des incidents, dans une démarche de résilience et d'amélioration continue.",
       "Architected and orchestrated an AI-driven hybrid SOC based on a Docker Swarm cluster distributed across a high-availability Proxmox infrastructure.",
       "Integrated a comprehensive cybersecurity ecosystem comprising Wazuh, TheHive, Cortex, OpenCTI, MISP, Zeek, Keycloak, HashiCorp Vault, Traefik, Teleport, Loki, and FleetDM.",
-      "Developed an incident analysis engine based on local LLMs (Ollama), enhanced by a RAG architecture and a vector database to automate analysis, contextual enrichment, and support for SOC analysts.",
-      "Designed automated SOAR workflows ensuring event correlation, threat intelligence enrichment, security case creation, and AI-assisted incident report generation.",
-      "Implemented a secure and scalable infrastructure incorporating high availability, centralized logging, monitoring, automated backups, and DevSecOps best practices.",
     ],
-    tech: ["Zero Trust", "NIST 800-207", "Docker Swarm", "Proxmox", "Wazuh", "TheHive", "Cortex", "OpenCTI", "MISP", "Zeek", "Keycloak", "HashiCorp Vault", "Ollama", "RAG", "SOAR", "DevSecOps"],
+    tech: ["NIST SP 800-207", "Zero Trust", "IAM/RBAC", "Gestion des risques", "Wazuh", "TheHive", "Cortex", "OpenCTI", "MISP"],
     icon: Shield,
     type: "work",
   },
   {
-    title: "SOC & AI Engineer (Internship)",
+    title: "Stage d'apprentissage — Ingénieur Cybersécurité & Automatisation",
     organization: "ABsec Cybersecurity",
     period: "May 2026 - July 2026",
     description: [
-      "Built a fully automated SOC pipeline: Ollama-powered LLM analyses SIEM alerts and delivers verdicts to SOAR for autonomous incident response.",
-      "Developed an analyst-facing contextual chatbot to surface threat insights in real time.",
-      "Reduced Mean Time to Respond (MTTR) by 85%; all components orchestrated via a centralised PostgreSQL database.",    ],
-    tech: ["Ollama", "SOAR", " AI", "chatbot"],
+      "Fait évoluer le SOC par l'intégration de l'IA générative (Ollama) dans les processus de détection, d'analyse, de triage et de traitement des incidents.",
+      "Réduction de 85 % du MTTR grâce à l'automatisation et à l'assistance IA dans le processus de réponse aux incidents.",
+      "Développé un chatbot contextuel pour les analystes afin de faciliter l'accès à l'information sur les menaces en temps réel.",
+    ],
+    tech: ["Ollama", "SOAR", "Automatisation", "MTTR"],
     icon: Sparkles,
     type: "work",
   },
   {
-    title: "Security Architect (Internship)",
+    title: "Stage d'apprentissage — Architecte Cybersécurité, GRC & SOC",
     organization: "ABsec Cybersecurity",
     period: "February 2026 - May 2026",
     description: [
-      "Designed multi-tenant SOC architecture (Client ↔ MSSP) covering detection, incident response, and threat intelligence",
-      "Architected 3-node Wazuh cluster for centralized SIEM and real-time alert visualization",
-      "Integrated RTIR + Cortex via REST API for automated artifact enrichment",
-      "Incorporated MISP + OpenCTI for threat intelligence correlation with MITRE ATT&CK mapping",
+      "Analyse des besoins de sécurité et évaluation des risques d'une PME selon ISO/IEC 27001, afin de définir les mesures et mécanismes de contrôle adaptés aux contraintes de ressources.",
+      "Conception et déploiement du socle SOC open-source (Wazuh, TheHive, Cortex, MISP, OpenCTI) pour la supervision, la détection, la Threat Intelligence et la gestion des incidents.",
+      "Structuration des premiers processus de sécurité et de gestion des incidents, dans une démarche de maîtrise des risques et d'amélioration continue.",
     ],
-    tech: ["Wazuh", "RTIR", "Cortex", "MISP", "OpenCTI", "SOAR"],
+    tech: ["ISO/IEC 27001", "Gestion des risques", "Wazuh", "Cortex", "MISP", "OpenCTI"],
     icon: Shield,
     type: "work",
   },
@@ -84,15 +83,15 @@ const experience = [
     type: "work",
   },
   {
-    title: "Cybersecurity Analyst (Internship)",
-    organization: "Ministry of Equipment and Water, Rabat",
+    title: "Stage d'initiation — Analyste Cybersécurité",
+    organization: "Ministère de l'Équipement et de l'Eau, Rabat",
     period: "June - August 2025",
     description: [
-      "Deployed Suricata IDS analyzing 5000+ security events daily, reducing false positives by 40%",
-      "Centralized security logs and created 8 custom Grafana dashboards",
-      "Implemented automated alert system for critical security incidents",
+      "Analyse d'événements de sécurité et contribution à l'évaluation de la conformité du SI vis-à-vis des exigences réglementaires DGSSI et ISO/IEC 27001.",
+      "Optimisation des processus de détection, avec réduction de 40 % des faux positifs, et production de livrables de synthèse pour la gouvernance interne.",
+      "Centralized security logs and created 8 custom Grafana dashboards.",
     ],
-    tech: ["Suricata", "InfluxDB", "Grafana", "Linux"],
+    tech: ["DGSSI", "ISO/IEC 27001", "Conformité", "Suricata", "Grafana"],
     icon: Building,
     type: "work",
   },
@@ -179,8 +178,8 @@ export function Experience() {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <div className="text-center mb-12">
-            <span className="font-mono text-sm text-primary tracking-wider">EXPERIENCE</span>
-            <h2 className="text-3xl lg:text-4xl font-bold mt-4">Professional Journey</h2>
+            <span className="font-mono text-sm text-primary tracking-wider">EXPÉRIENCE</span>
+            <h2 className="text-3xl lg:text-4xl font-bold mt-4">Parcours Professionnel</h2>
           </div>
 
           <div className="space-y-6">

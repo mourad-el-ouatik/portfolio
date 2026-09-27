@@ -3,9 +3,15 @@
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
-import { Cloud, GitBranch, Shield, Bug, Radio, LineChart, Code, Lock, Globe } from "lucide-react"
+import { Cloud, GitBranch, Shield, Bug, Radio, LineChart, Code, Lock, Globe, ClipboardCheck } from "lucide-react"
 
 const skills = [
+  {
+    category: "Cyber GRC & Conformité",
+    icon: ClipboardCheck,
+    tools: ["ISO 27001", "ISO 27035", "NIST CSF", "NIST SP 800-207", "DGSSI", "Data Privacy"],
+    level: 90,
+  },
   {
     category: "Cloud & Infrastructure",
     icon: Cloud,
@@ -84,9 +90,9 @@ export function Skills() {
           className="text-center mb-16"
         >
           <span className="font-mono text-sm text-primary tracking-wider">SKILLS</span>
-          <h2 className="text-3xl lg:text-4xl font-bold mt-4">Technical Arsenal</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold mt-4">Compétences & Référentiels</h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Technologies and tools I leverage to build secure, scalable solutions
+            Référentiels de gouvernance, outils et technologies que je mobilise pour piloter des chantiers de conformité et de sécurité
           </p>
         </motion.div>
 
