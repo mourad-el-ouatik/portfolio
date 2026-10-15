@@ -21,6 +21,8 @@ const certifications: Certification[] = [
     issuer: "IBM",
     date: "Septembre 2026",
     icon: ShieldCheck,
+    badge: "/governance-risk-compliance-and-data-privacy.png",
+    url: "https://www.credly.com/badges/2fdd2e33-c158-4a46-ba74-9d1ee496d2b0/public_url",
   },
   {
     name: "Oracle Cloud Infrastructure Foundations Associate",
